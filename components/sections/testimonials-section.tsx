@@ -23,7 +23,7 @@ const mockTestimonials = [
     avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100',
     rating: 5,
     comment: 'Sold my iPhone through them. Process was smooth, payment was instant. Highly recommend!',
-    location: 'Delhi',
+    location: 'Mumbai',
     date: '2025-01-10'
   },
   {
@@ -32,7 +32,7 @@ const mockTestimonials = [
     avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100',
     rating: 5,
     comment: 'Amazing experience! They handled everything professionally and offered the best price in the market.',
-    location: 'Bangalore',
+    location: 'Mumbai',
     date: '2025-01-08'
   }
 ];
@@ -73,10 +73,10 @@ export function TestimonialsSection() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial: any, index: number) => (
-              <TestimonialCard 
-                key={testimonial.id} 
-                testimonial={testimonial} 
-                index={index} 
+              <TestimonialCard
+                key={testimonial.id}
+                testimonial={testimonial}
+                index={index}
               />
             ))}
           </div>

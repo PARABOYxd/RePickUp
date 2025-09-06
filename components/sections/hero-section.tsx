@@ -33,8 +33,7 @@ export function HeroSection() {
                 Hassle-Free
               </h1>
               <p className="text-xl text-gray-600 mt-6 leading-relaxed">
-                Get instant quotes, schedule free pickups, and earn top dollar for your items. 
-                Professional service with transparent pricing and quick payments.
+                Sell Your Items for the Best Price – Instant Quotes, Free Pickup, and Fast Payments with 100% Transparency.
               </p>
             </div>
 
@@ -70,7 +69,7 @@ export function HeroSection() {
                 Schedule Pickup Now
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
               </CustomButton>
-              
+
               <CustomButton
                 variant="whatsapp"
                 size="lg"
@@ -111,7 +110,7 @@ export function HeroSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
-            
+
             {/* Floating elements */}
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
@@ -122,7 +121,7 @@ export function HeroSection() {
               <p className="text-2xl font-bold text-blue-600">₹50K+</p>
               <p className="text-sm text-gray-600">Avg Monthly Sales</p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}

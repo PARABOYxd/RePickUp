@@ -91,10 +91,10 @@ export default function ProductsPage() {
 
   const { data: products, isLoading } = useQuery({
     queryKey: ['products', selectedCategory, currentPage],
-    queryFn: () => apiService.getProducts({ 
+    queryFn: () => apiService.getProducts({
       category: selectedCategory !== 'all' ? selectedCategory : undefined,
       page: currentPage,
-      limit: 12 
+      limit: 12
     }),
     retry: false,
     throwOnError: false,
@@ -116,7 +116,7 @@ export default function ProductsPage() {
   return (
     <>
       <SEOHead />
-      
+
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
         <section className="bg-white border-b">
@@ -127,10 +127,10 @@ export default function ProductsPage() {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                Our Products
+                Products
               </h1>
               <p className="text-xl text-gray-600">
-                Quality electronics and furniture at affordable prices
+                I Bought It at Approx. This Price – And Now You Can Too!
               </p>
             </motion.div>
           </div>
@@ -150,7 +150,7 @@ export default function ProductsPage() {
                     className="pl-10 w-full md:w-64"
                   />
                 </div>
-                
+
                 <Select value={selectedCategory} onValueChange={setSelectedCategory}>
                   <SelectTrigger className="w-full md:w-48">
                     <SelectValue placeholder="All Categories" />
